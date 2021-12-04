@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="3DVNet: Multi-View Depth Prediction and Volumetric Refinement">
+  <meta name="keywords" content="VoRTX transformers 3D reconstruction">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3DVNet: Multi-View Depth Prediction and Volumetric Refinement</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://noahstier.github.io/vortx/">
+            VoRTX
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">3DVNet</h1>
+          <h1 class="title publication-title">Multi-View Depth Prediction and Volumetric Refinement</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://alexrich021.github.io">Alexander Rich</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://noahstier.github.io">Noah Stier</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://web.ece.ucsb.edu/~psen/">Pradeep Sen</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://sites.cs.ucsb.edu/~holl">Tobias Höllerer</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">University of California, Santa Barbara</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2112.00202"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <!-- <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span> -->
+                  <span>Paper</span>
+                </a>
+              </span>
+          <!--
+
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+          -->
+              <span class="link-block">
+                <a href="https://github.com/alexrich021/3dvnet"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <!-- <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span> -->
+                  <span>Code</span>
+                  </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://drive.google.com/drive/folders/1RP7TSVYhQQbANygJuxwbLHHuLvBsVXa6?usp=sharing"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <!-- <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span> -->
+                  <span>Weights</span>
+                  </a>
+              </span>
+
+              <span class="link-block">
+                <a href="./static/3dvnet_3dv2021_supplementary.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <!-- <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span> -->
+                  <span>Supplementary</span>
+                  </a>
+              </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <div class="columns is-centered has-text-centered">
+  Project webpage coming soon!
+</div> -->
+
+<!--
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/vortx1.gif" />
+      <h2 class="subtitle has-text-centered">
+        VoRTX caption caption
+      </h2>
+    </div>
+  </div>
+</section>
+
+-->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+
+          <p>
+            We present 3DVNet, a novel multi-view stereo (MVS) depth-prediction method that combines the advantages of previous depth-based and volumetric MVS approaches. Our key idea is the use of a 3D scene-modeling network that iteratively updates a set of coarse depth predictions, resulting in highly accurate predictions which agree on the underlying scene geometry. Unlike existing depth-prediction techniques, our method uses a volumetric 3D convolutional neural network (CNN) that operates in world space on all depth maps jointly. The network can therefore learn meaningful scene-level priors. Furthermore, unlike existing volumetric MVS techniques, our 3D CNN operates on a feature-augmented point cloud, allowing for effective aggregation of multi-view information and flexible iterative refinement of depth maps. Experimental results show our method exceeds state-of-the-art accuracy in both depth prediction and 3D reconstruction metrics on the ScanNet dataset, as well as a selection of scenes from the TUM-RGBD and ICL-NUIM datasets. This shows that our method is both effective and generalizes to new settings.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{rich20213dvnet,
+  title={{3DVNet}: Multi-View Depth Prediction and Volumetric Refinement},
+  author={Alexander Rich and Noah Stier and Pradeep Sen and Tobias H\"ollerer},
+  booktitle={Proceedings of the International Conference on {3D} Vision ({3DV})},
+  year={2021}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+    <div class="columns is-centered">
+      <div class="content">
+          Website source code from <a href="https://nerfies.github.io/">Nerfies</a>.
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
