@@ -1,224 +1,196 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Alex Rich</title>
-  
-  <meta name="author" content="Alex Rich">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Rich</title>
 </head>
-
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Alex Rich</name>
-              </p>
-              <p>I'm a PhD student in computer science at <a href="https://cs.ucsb.edu/">UCSB</a>, advised by <a href="https://sites.cs.ucsb.edu/~holl">Tobias Höllerer</a>. I am broadly interested in machine learning, computer vision, and computer graphics. My research focuses on multi-view stereo and 3D reconstruction, with applications in augmented and virtual reality, autonomous navigation, and more.
-              </p>
-              <p>
-              I earned a B.S. from <a href="https://www.math.ucsb.edu/">UCSB</a> in mathematics, where I worked with <a href="http://web.math.ucsb.edu/~millett/">Kenneth C. Millett</a> on knot theory and the analysis of common subknots in minimal prime knot presentations.
-              </p>
-              <p style="text-align:center">
-                <a href="mailto:anrich@ucsb.edu">Email</a> &nbsp/&nbsp
-                <a href="https://github.com/alexrich021">Github</a>
-                <!-- <a href="https://scholar.google.com/citations?hl=en&user=b0tkYB4AAAAJ">Google Scholar</a> -->
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/Alex_Rich.jpg"><img style="width:100%;max-width:100%;border-radius:50%" alt="profile photo" src="images/Alex_Rich.jpg" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/div-loss.png' width="160">
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://alexrich021.github.io/div-loss/">
-                <papertitle>Smoothness, Synthesis, and Sampling: Re-thinking Unsupervised Multi-View Stereo with DIV Loss</papertitle>
-              </a>
-              <br>
-              <strong>Alex Rich</strong>,
-              <a href="https://noahstier.github.io">Noah Stier</a>,
-              <a href="https://web.ece.ucsb.edu/~psen/">Pradeep Sen</a>,
-              <a href="https://sites.cs.ucsb.edu/~holl">Tobias Höllerer</a>
-              <br>
-              <em>ECCV</em>, 2024
-              <br>
-              <a href="https://alexrich021.github.io/div-loss/">project page</a>
-              /
-              <!-- <a href="https://arxiv.org/abs/2112.00202">arXiv</a>
-              / -->
-              <a href="https://github.com/alexrich021/div-loss">code</a>
-              <p></p>
-              <p>We introduce DIV Loss, a novel loss formulation for unsupservised multi-view stereo. The key advantage of our DIV loss is that it can be easily dropped into existing unsupervised MVS training pipelines, resulting in significant quantitative and qualitative improvements.</p>
-            </td>
-          </tr> 
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/3dvnet.jpg' width="160">
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://alexrich021.github.io/3dvnet/">
-                <papertitle>3DVNet: Multi-View Depth Prediction and Volumetric Refinement</papertitle>
-              </a>
-              <br>
-              <strong>Alexander Rich</strong>,
-              <a href="https://noahstier.github.io">Noah Stier</a>,
-              <a href="https://web.ece.ucsb.edu/~psen/">Pradeep Sen</a>,
-              <a href="https://sites.cs.ucsb.edu/~holl">Tobias Höllerer</a>
-              <br>
-              <em>3DV</em>, 2021
-              <br>
-              <a href="https://alexrich021.github.io/3dvnet/">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2112.00202">arXiv</a>
-              /
-              <a href="https://github.com/alexrich021/3dvnet">code</a>
-              <p></p>
-              <p>We introduce a deep multi-view stereo network that jointly models all depth maps in scene space, allowing it to learn geometric priors across entire scenes. It iteratively refines its predictions, leading to highly coherent reconstructions.</p>
-            </td>
-          </tr> 
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/vortx.jpg' width="160">
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://noahstier.github.io/vortx">
-                <papertitle> VoRTX: Volumetric 3D Reconstruction with Transformers for Voxel-wise View Selection and Fusion</papertitle>
-              </a>
-              <br>
-              <a href="https://noahstier.github.io">Noah Stier</a>,
-              <strong>Alexander Rich</strong>,
-              <a href="https://web.ece.ucsb.edu/~psen/">Pradeep Sen</a>,
-              <a href="https://sites.cs.ucsb.edu/~holl">Tobias Höllerer</a>
-              <br>
-              <em>3DV</em>, 2021
-              <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-              <a href="https://noahstier.github.io/vortx">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2112.00236">arXiv</a>
-              <p></p>
-              <p>We introduce a 3D reconstruction model with a novel multi-view fusion method based on transformers. It models occlusion by predicting <em>projective occupancy</em>, which reduces noise and leads to more detailed and complete reconstructions.</p>
-            </td>
-          </tr> 
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/ildav_archviz.png' width="160">
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://github.com/vivianross06/Synthetic-Data-Generation-ICCV-2021">
-                <papertitle>Using Synthetic Data Generation to Probe Multi-View Stereo Networks</papertitle>
-              </a>
-              <br>
-              Pranav Acharya,
-              Daniel Lohn,
-              Vivian Ross,
-              Maya Ha,
-              <strong>Alexander Rich</strong>,
-              <a href="https://ehsansayyad.com/">Ehsan Sayyad</a>,
-              <a href="https://sites.cs.ucsb.edu/~holl">Tobias Höllerer</a>
-              <br>
-              <em>ILDAV Workshop, Adjunct Proceedings of ICCV</em>, 2021
-              <br>
-              <a href="https://openaccess.thecvf.com/content/ICCV2021W/ILDAV/papers/Acharya_Using_Synthetic_Data_Generation_To_Probe_Multi-View_Stereo_Networks_ICCVW_2021_paper.pdf">PDF</a>
-              /
-              <a href="https://github.com/vivianross06/Synthetic-Data-Generation-ICCV-2021">code</a>
-              <p></p>
-              <p>We introduce a synthetic data generation pipeline, which produces image sequences for multi-view stereo methods given 3D scene models as input. We utilize this pipeline to study existing multi-view-stereo depth-prediction methods. Among other results, we find that camera height and vertical camera viewing angle are the parameters that cause the most variation in depth-prediction errors on these image sequences.</p>
-            </td>
-          </tr> 
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/augdesc.png' width="160">
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://github.com/KentoNishi/Augmentation-for-LNL">
-                <papertitle>Augmentation Strategies for Learning with Noisy Labels</papertitle>
-              </a>
-              <br>
-              Kento Nishi,
-              <a href="https://sites.cs.ucsb.edu/~yding/">Yi Ding</a>,
-              <strong>Alex Rich</strong>,
-              <a href="https://sites.cs.ucsb.edu/~holl">Tobias Höllerer</a>
-              <br>
-              <em>CVPR</em>, 2020
-              <br>
-              <a href="https://arxiv.org/abs/2103.02130">arXiv</a>
-              /
-              <a href="https://github.com/KentoNishi/Augmentation-for-LNL">code</a>
-              <p></p>
-              <p>We propose <em>Augmented Descent</em>, a data augmentation strategy for training deep classifiers robust to incorrect labels in the training set. This technique works by using one set of augmentations for loss modeling tasks common to existing noise-robust training methods, while using a separate set of augmentations for backpropagation.</p>
-            </td>
-          </tr> 
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <img src='images/knot_fingerprint.png' width="160">
-              </div>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://web.math.ucsb.edu/~millett/Papers/2016MillettRich.pdf">
-                <papertitle>More Knots in Knots: a study of classical knot diagrams</papertitle>
-              </a>
-              <br>
-              <a href="http://web.math.ucsb.edu/~millett/">Kenneth C. Millett</a>,
-              <strong>Alex Rich</strong>
-              <br>
-              <em>Journal of Knot Theory and its Ramifications</em>, 2017
-              <br>
-              <a href="http://web.math.ucsb.edu/~millett/Papers/2016MillettRich.pdf">PDF</a>
-              <p></p>
-              <p>We perform a comprehensive study of subknots in minimal prime knot presentations through 15 crossings. We find among this set of 313,258 prime knot presentations, 99.83% contain a trefoil subknot and every knot contains either a trefoil subknot or a figure-eight subknot.</p>
-            </td>
-          </tr> 
-
-        </tbody></table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                Website source code from <a href="https://jonbarron.info/">Jon Barron</a>.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
-</body>
-
-</html>
+  <div style="max-width:800px;margin-right:auto;margin-left:auto">
+    <div class="pure-g">
+      <div class="pure-u-1 pure-u-sm-2-3 l-box">
+        <p class="hcenter" style="text-align:center"><span style="font-size:3em">Alex Rich</span></p>
+        <p>
+          I'm a PhD student in computer science at <a href="https://cs.ucsb.edu/">UCSB</a>, advised by <a href="https://sites.cs.ucsb.edu/~holl">Tobias Höllerer</a>. I am broadly interested in machine learning, computer vision, and computer graphics. My research focuses on multi-view stereo and 3D reconstruction, with many applications including augmented and virtual reality, and autonomous navigation.
+        <p>
+          During my PhD, I interned with <a href="https://apple.com">Apple</a>'s VIO/Slam group, working on IMU-only navigation with <a href="https://scholar.google.com/citations?user=c5HeXxsAAAAJ&hl=en">Stergios Roumeliotis</a>. Prior to my PhD, I was a software engineer at <a href="https://www.apeel.com/">Apeel Sciences</a>.
+        </p>
+        <p>
+          I earned a B.S. from <a href="https://www.math.ucsb.edu/">UCSB</a> in mathematics, where I worked with <a href="http://web.math.ucsb.edu/~millett/">Kenneth C. Millett</a> on knot theory and the analysis of common subknots in minimal prime knot presentations.
+        </p>
+        <p style="text-align:center">
+            <a href="mailto:anrich@ucsb.edu">Email</a>
+             &nbsp/&nbsp
+            <a href="https://github.com/alexrich021">Github</a>
+             &nbsp/&nbsp
+            <a href="https://scholar.google.com/citations?user=yNFnTOYAAAAJ&hl=en&oi=ao">Google Scholar</a>
+        </p>
+      </div>
+      <div class="hvcenter pure-u-1 pure-u-sm-1-3">
+        <a href="images/Alex_Rich.jpg">
+          <img style="width:100%;max-width:234px;border-radius:50%" alt="profile photo" src="images/Alex_Rich.jpg">
+        </a>
+      </div>
+    </div>
+    <!-- Header -->
+    <div class="pure-g research-project">
+       <div class="pure-u-1">
+        <span style="font-size:2em;padding-bottom:1em">Research</span>
+      </div>
+    </div>
+    <!-- DIV Loss -->
+    <div class="pure-g research-project">
+      <div class="pure-u-1 pure-u-sm-1-4 hcenter">
+        <img src="images/div-loss.png" class="image-main">
+      </div>
+      <div class="pure-u-1 pure-u-sm-3-4 research-blurb">
+        <span class="paper-title">Smoothness, Synthesis, and Sampling: Re-thinking Unsupervised Multi-View Stereo with DIV Loss</span>
+        <br>
+        <strong>Alex Rich</strong>,
+        <a href="https://noahstier.github.io">Noah Stier</a>,
+        <a href="https://web.ece.ucsb.edu/~psen/">Pradeep Sen</a>,
+        <a href="https://sites.cs.ucsb.edu/~holl">Tobias Höllerer</a>
+        <br>
+        <em>ECCV</em> 2024 <font color="red"><strong>(Oral Presentation)</strong></font>
+        <br>
+        <a href="https://alexrich021.github.io/div-loss/">project page</a>
+         &nbsp/&nbsp
+        <a href="https://github.com/alexrich021/div-loss">code</a>
+        <p></p>
+        <p>
+          We introduce DIV Loss, a novel loss formulation for unsupservised multi-view stereo. The key advantage of our DIV loss is that it can be easily dropped into existing unsupervised MVS training pipelines, resulting in significant quantitative and qualitative improvements.
+        </p>
+      </div>
+    </div>
+    <!-- 3DVNet -->
+    <div class="pure-g research-project">
+      <div class="pure-u-1 pure-u-sm-1-4 hcenter">
+        <img src="images/3dvnet.jpg" class="image-main">
+      </div>
+      <div class="pure-u-1 pure-u-sm-3-4 research-blurb">
+        <span class="paper-title">3DVNet: Multi-View Depth Prediction and Volumetric Refinement</span>
+        <br>
+        <strong>Alexander Rich</strong>,
+        <a href="https://noahstier.github.io">Noah Stier</a>,
+        <a href="https://web.ece.ucsb.edu/~psen/">Pradeep Sen</a>,
+        <a href="https://sites.cs.ucsb.edu/~holl">Tobias Höllerer</a>
+        <br>
+        <em>3DV</em> 2021
+        <br>
+        <a href="https://alexrich021.github.io/3dvnet/">project page</a>
+         &nbsp/&nbsp
+        <a href="https://arxiv.org/abs/2112.00202">arXiv</a>
+         &nbsp/&nbsp
+        <a href="https://github.com/alexrich021/3dvnet">code</a>
+        <p></p>
+        <p>
+          We introduce a deep multi-view stereo network that jointly models all depth maps in scene space, allowing it to learn geometric priors across entire scenes. It iteratively refines its predictions, leading to highly coherent reconstructions.
+        </p>
+      </div>
+    </div>
+    <!-- VoRTX -->
+    <div class="pure-g research-project">
+      <div class="pure-u-1 pure-u-sm-1-4 hcenter">
+        <img src="images/vortx.jpg" class="image-main">
+      </div>
+      <div class="pure-u-1 pure-u-sm-3-4 research-blurb">
+        <span class="paper-title">VoRTX: Volumetric 3D Reconstruction with Transformers for Voxel-wise View Selection and Fusion</span>
+        <br>
+        <a href="https://noahstier.github.io">Noah Stier</a>,
+        <strong>Alexander Rich</strong>,
+        <a href="https://web.ece.ucsb.edu/~psen/">Pradeep Sen</a>,
+        <a href="https://sites.cs.ucsb.edu/~holl">Tobias Höllerer</a>
+        <br>
+        <em>3DV</em> 2021
+        <font color="red"><strong>(Oral Presentation)</strong></font>
+        <br>
+        <a href="https://arxiv.org/abs/2112.00236">arXiv</a>
+         &nbsp/&nbsp
+        <a href="https://github.com/noahstier/vortx">code</a>
+        <p></p>
+        <p>
+          We introduce a 3D reconstruction model with a novel multi-view fusion method based on transformers. It models occlusion by predicting <em>projective occupancy</em>, which reduces noise and leads to more detailed and complete reconstructions.
+        </p>
+      </div>
+    </div>
+    <!-- ILDAV -->
+    <div class="pure-g research-project">
+      <div class="pure-u-1 pure-u-sm-1-4 hcenter">
+        <img src="images/ildav_archviz.png" class="image-main">
+      </div>
+      <div class="pure-u-1 pure-u-sm-3-4 research-blurb">
+        <span class="paper-title">Using Synthetic Data Generation to Probe Multi-View Stereo Networks</span>
+        <br>
+        Pranav Acharya,
+        Daniel Lohn,
+        Vivian Ross,
+        Maya Ha,
+        <strong>Alexander Rich</strong>,
+        <a href="https://ehsansayyad.com/">Ehsan Sayyad</a>,
+        <a href="https://sites.cs.ucsb.edu/~holl">Tobias Höllerer</a>
+        <br>
+        <em>ILDAV Workshop, Adjunct Proceedings of ICCV</em> 2021
+        <br>
+        <a href="https://openaccess.thecvf.com/content/ICCV2021W/ILDAV/papers/Acharya_Using_Synthetic_Data_Generation_To_Probe_Multi-View_Stereo_Networks_ICCVW_2021_paper.pdf">PDF</a>
+         &nbsp/&nbsp
+        <a href="https://github.com/vivianross06/Synthetic-Data-Generation-ICCV-2021">code</a>
+        <p></p>
+        <p>
+          We introduce a synthetic data generation pipeline, which produces image sequences for multi-view stereo methods given 3D scene models as input. We utilize this pipeline to study existing multi-view-stereo depth-prediction methods. Among other results, we find that camera height and vertical camera viewing angle are the parameters that cause the most variation in depth-prediction errors on these image sequences.
+        </p>
+      </div>
+    <!-- AugDesc -->
+    <div class="pure-g research-project">
+      <div class="pure-u-1 pure-u-sm-1-4 hcenter">
+        <img src="images/augdesc.png" class="image-main">
+      </div>
+      <div class="pure-u-1 pure-u-sm-3-4 research-blurb">
+        <span class="paper-title">Augmentation Strategies for Learning with Noisy Labels</span>
+        <br>
+        <a href="https://kentonishi.com/">Kento Nishi</a>,
+        <a href="https://ding1.com/">Yi Ding</a>,
+        <strong>Alex Rich</strong>,
+        <a href="https://sites.cs.ucsb.edu/~holl">Tobias Höllerer</a>
+        <br>
+        <em>CVPR</em> 2020
+        <br>
+        <a href="https://arxiv.org/abs/2103.02130">arXiv</a>
+         &nbsp/&nbsp
+        <a href="https://github.com/KentoNishi/Augmentation-for-LNL">code</a>
+        <p></p>
+        <p>
+          We propose <em>Augmented Descent</em>, a data augmentation strategy for training deep classifiers robust to incorrect labels in the training set. This technique works by using one set of augmentations for loss modeling tasks common to existing noise-robust training methods, while using a separate set of augmentations for backpropagation.
+        </p>
+      </div>
+    </div>
+    <!-- Knots in Knots -->
+    <div class="pure-g research-project">
+      <div class="pure-u-1 pure-u-sm-1-4 hcenter">
+        <img src="images/knot_fingerprint.png" class="image-main">
+      </div>
+      <div class="pure-u-1 pure-u-sm-3-4 research-blurb">
+        <span class="paper-title">More Knots in Knots: a study of classical knot diagrams</span>
+        <br>
+        <a href="http://web.math.ucsb.edu/~millett/">Kenneth C. Millett</a>,
+        <strong>Alex Rich</strong>
+        <br>
+        <em>Journal of Knot Theory and its Ramifications</em> 2017
+        <br>
+        <a href="http://web.math.ucsb.edu/~millett/Papers/2016MillettRich.pdf">PDF</a>
+        <p></p>
+        <p>
+          We perform a comprehensive study of subknots in minimal prime knot presentations through 15 crossings. We find among this set of 313,258 prime knot presentations, 99.83% contain a trefoil subknot and every knot contains either a trefoil subknot or a figure-eight subknot.
+        </p>
+      </div>
+    </div>
+  </div>
+    <!-- Footer -->
+    <p style="text-align:right;font-size:small;margin:1em">
+      Website design from <a href="https://jonbarron.info/">Jon Barron</a>.
+    </p>
+  </body>
+  </html>
