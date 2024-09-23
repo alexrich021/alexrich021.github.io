@@ -86,55 +86,29 @@
             <div class="publication-links">
 
               <span class="link-block">
-                <!-- <a href="https://arxiv.org/abs/2112.00202" -->
-                <a href="https://alexrich021.github.io/div-loss/"
-                   class="external-link button is-normal is-rounded is-dark is-static">
-                  <!-- <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span> -->
+                <a href="./static/div-loss-eccv-2024.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
                   <span>Paper</span>
                 </a>
               </span>
-          <!--
 
-              <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span>
-          -->
               <span class="link-block">
                 <a href="https://github.com/alexrich021/div-loss"
                    class="external-link button is-normal is-rounded is-dark">
-                  <!-- <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span> -->
                   <span>Code</span>
                   </a>
               </span>
 
               <span class="link-block">
-                <!-- <a href="https://drive.google.com/drive/folders/1RP7TSVYhQQbANygJuxwbLHHuLvBsVXa6?usp=sharing" -->
                 <a href="https://alexrich021.github.io/div-loss/"
                    class="external-link button is-normal is-rounded is-dark is-static">
-                  <!-- <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span> -->
                   <span>Weights</span>
                   </a>
               </span>
 
               <span class="link-block">
-                <!-- <a href="./static/3dvnet_3dv2021_supplementary.pdf" -->
-                <a href="https://alexrich021.github.io/div-loss/"
-                   class="external-link button is-normal is-rounded is-dark is-static">
-                  <!-- <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span> -->
+                <a href="./static/div-loss-supp-eccv-2024.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
                   <span>Supplementary</span>
                   </a>
               </span>
@@ -147,41 +121,28 @@
   </div>
 </section>
 
-
-<div class="columns is-centered has-text-centered">
-  Project webpage coming soon!
-</div>
-
-<!--
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/vortx1.gif" />
-      <h2 class="subtitle has-text-centered">
-        VoRTX caption caption
-      </h2>
+      <img src="./static/teaser.png">
+      <p class="has-text-centered">
+        Our <strong>DIV</strong> loss results in substantially more precise object boundaries and reduced artifacts when training unsupervised multi-view-stereo networks
+      </p>
     </div>
   </div>
-</section>
-
--->
-
-
-<!-- <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
-
           <p>
-            We present 3DVNet, a novel multi-view stereo (MVS) depth-prediction method that combines the advantages of previous depth-based and volumetric MVS approaches. Our key idea is the use of a 3D scene-modeling network that iteratively updates a set of coarse depth predictions, resulting in highly accurate predictions which agree on the underlying scene geometry. Unlike existing depth-prediction techniques, our method uses a volumetric 3D convolutional neural network (CNN) that operates in world space on all depth maps jointly. The network can therefore learn meaningful scene-level priors. Furthermore, unlike existing volumetric MVS techniques, our 3D CNN operates on a feature-augmented point cloud, allowing for effective aggregation of multi-view information and flexible iterative refinement of depth maps. Experimental results show our method exceeds state-of-the-art accuracy in both depth prediction and 3D reconstruction metrics on the ScanNet dataset, as well as a selection of scenes from the TUM-RGBD and ICL-NUIM datasets. This shows that our method is both effective and generalizes to new settings.
+            Despite significant progress in unsupervised multi-view stereo (MVS), the core loss formulation has remained largely unchanged since its introduction. However, we identify fundamental limitations to this core loss and propose three major changes to improve the modeling of depth priors, occlusion, and view-dependent effects. First, we eliminate prominent stair-stepping and edge artifacts in predicted depth maps using a clamped depth-smoothness constraint. Second, we propose a learned view-synthesis approach to generate an image for photometric loss, avoiding the use of hand-coded heuristics for handling view-dependent effects. Finally, we sample additional views for supervision beyond those used as MVS input, challenging the network to predict depth that matches unseen views. Together, these contributions form an improved supervision strategy we call DIV loss. The key advantage of our DIV loss is that it can be easily dropped into existing unsupervised MVS training pipelines, resulting in significant improvements on competitive reconstruction benchmarks and drastically better qualitative performance around object boundaries for minimal training cost.
           </p>
         </div>
       </div>
     </div>
 
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
@@ -189,24 +150,22 @@
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
-</section> -->
+</section>
 
-
-
-<!-- <section class="section" id="BibTeX">
+<section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{rich20213dvnet,
-  title={{3DVNet}: Multi-View Depth Prediction and Volumetric Refinement},
-  author={Alexander Rich and Noah Stier and Pradeep Sen and Tobias H\"ollerer},
-  booktitle={Proceedings of the International Conference on {3D} Vision ({3DV})},
-  year={2021}
+    <pre><code>@inproceedings{rich2024divloss,
+  title={Smoothness, Synthesis, and Sampling: Re-thinking Unsupervised Multi-View Stereo with {DIV} Loss},
+  author={Alex Rich and Noah Stier and Pradeep Sen and Tobias H\"ollerer},
+  booktitle={Proceedings of the European Conference on Computer Vision ({ECCV})},
+  year={2024}
 }</code></pre>
   </div>
 </section>
- -->
+
 
 <footer class="footer">
     <div class="columns is-centered">
