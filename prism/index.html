@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Prism: Semi-Supervised Multi-View Stereo with Monocular Structure Priors">
+  <meta name="keywords" content="Semi-Supervised Multi-View Stereo">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prism</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://alexrich021.github.io/">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://alexrich021.github.io/div-loss/">
+            DIV Loss
+          </a>
+          <a class="navbar-item" href="https://alexrich021.github.io/3dvnet/">
+            3DVNet
+          </a>
+          <a class="navbar-item" href="https://noahstier.github.io/vortx/">
+            VoRTX
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Prism</h1>
+          <h1 class="title is-4 publication-title">Semi-Supervised Multi-View Stereo with Monocular Structure Priors</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://alexrich021.github.io">Alex Rich</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://noahstier.github.io">Noah Stier</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://web.ece.ucsb.edu/~psen/">Pradeep Sen</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://sites.cs.ucsb.edu/~holl">Tobias Höllerer</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">University of California, Santa Barbara</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+              <span class="link-block">
+                <a href="./static/div-loss-eccv-2024.pdf"
+                   class="external-link button is-normal is-rounded is-dark is-static">
+                  <span>Paper</span>
+                </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://github.com/alexrich021/div-loss"
+                   class="external-link button is-normal is-rounded is-dark is-static">
+                  <span>Code</span>
+                  </a>
+              </span>
+
+              <span class="link-block">
+                <a href="https://alexrich021.github.io/div-loss/"
+                   class="external-link button is-normal is-rounded is-dark is-static">
+                  <span>Weights</span>
+                  </a>
+              </span>
+
+              <span class="link-block">
+                <a href="./static/div-loss-supp-eccv-2024.pdf"
+                   class="external-link button is-normal is-rounded is-dark is-static">
+                  <span>Supplementary</span>
+                  </a>
+              </span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <!-- <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/teaser.png">
+      <p class="has-text-centered">
+        Our <strong>DIV</strong> loss results in substantially more precise object boundaries and reduced artifacts when training unsupervised multi-view-stereo networks
+      </p>
+    </div>
+  </div> -->
+
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The promise of unsupervised multi-view-stereo (MVS) is to leverage large unlabeled datasets, yet current methods underperform when training on difficult data, such as handheld smartphone videos of indoor scenes. Meanwhile, high-quality synthetic datasets are available but MVS networks trained on these datasets fail to generalize to real-world examples. To bridge this gap, we propose a semi-supervised learning framework that allows us to train on real and rendered images jointly, capturing structural priors from synthetic data while ensuring parity with the real-world domain. Central to our framework is a novel set of losses that leverages powerful existing monocular relative-depth estimators trained on the synthetic dataset, transferring the rich structure of this relative depth to the MVS predictions on unlabeled data. Inspired by perceptual image metrics, we compare the MVS and monocular predictions via a deep feature loss and a multi-scale statistical loss. Our full framework, which we call Prism, achieves large quantitative and qualitative improvements over current unsupervised and synthetic-supervised MVS networks. This is a best-case-scenario result, opening the door to using both unlabeled smartphone videos and photorealistic synthetic datasets for training MVS networks.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{rich2024prism,
+  title={Prism: Semi-Supervised Multi-View Stereo with Monocular Structure Priors},
+  author={Alex Rich and Noah Stier and Pradeep Sen and Tobias H\"ollerer},
+  booktitle={arXiv},
+  year={2024}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+    <div class="columns is-centered">
+      <div class="content">
+          Website source code from <a href="https://nerfies.github.io/">Nerfies</a>.
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
